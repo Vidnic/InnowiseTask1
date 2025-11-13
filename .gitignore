@@ -1,7 +1,8 @@
-*.class
 target/
-bin/
+
+# Eclipse
 .classpath
 .project
 .settings/
 .metadata/
+bin/
