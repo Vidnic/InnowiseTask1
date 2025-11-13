@@ -8,13 +8,19 @@ public class ArrayManagerSortServiceImpl implements ArrayManagerSortService{
 
 	@Override
 	public void insertionSort() {
-		// TODO Auto-generated method stub
+		throw new UnsupportedOperationException();
 		
 	}
 
 	@Override
 	public void bubbleSort() {
-		// TODO Auto-generated method stub
+		throw new UnsupportedOperationException();
+		
+	}
+
+	@Override
+	public void mergeSort() {
+		throw new UnsupportedOperationException();
 		
 	}
 

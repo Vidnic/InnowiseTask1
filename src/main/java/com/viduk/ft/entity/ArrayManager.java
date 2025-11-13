@@ -3,9 +3,13 @@ package com.viduk.ft.entity;
 import java.util.Objects;
 import java.util.Arrays;
 import com.viduk.ft.exeption.*;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 public class ArrayManager {
 
+	private static final Logger log = LogManager.getLogger(ArrayManager.class); 
+	
 	private long id;
 	private int[] data;
 
