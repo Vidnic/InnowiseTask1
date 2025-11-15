@@ -1,6 +1,8 @@
-package com.viduk.ft.exeption;
+package com.viduk.ft.exсeption;
 
 public class CustomArrayException extends Exception {
+
+	private static final long serialVersionUID = 6271888703433909785L;
 
 	public CustomArrayException() {
 		super();

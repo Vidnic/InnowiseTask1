@@ -2,41 +2,49 @@ package com.viduk.ft.entity;
 
 import java.util.Objects;
 import java.util.Arrays;
-import com.viduk.ft.exeption.*;
+
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-public class ArrayManager {
+import com.viduk.ft.exсeption.*;
 
-	private static final Logger log = LogManager.getLogger(ArrayManager.class); 
+public class CustomArray {
+
+	private static final Logger log = LogManager.getLogger(); 
 	
 	private long id;
 	private int[] data;
 
-	public ArrayManager() {
+	public CustomArray() {
 
 	}
 
-	public ArrayManager(long id, int size) {
+	public CustomArray(long id, int size) {
 		this.setId(id);
 		this.data = new int[size];
 	}
 
-	public ArrayManager(long id, int[] data) {
+	public CustomArray(long id, int[] data) {
 		this.setId(id);
 		this.data = data.clone();
 	}
 
 	public int get(int index) throws CustomArrayException {
-		if (index >= data.length || index < 0)
+		if (index >= data.length || index < 0) {
 			throw new CustomArrayException("index is out range");
+		}
 		return data[index];
 	}
 
 	public void set(int index, int el) throws CustomArrayException {
-		if (index >= data.length || index < 0)
+		if (index >= data.length || index < 0) {
 			throw new CustomArrayException("index is out range");
+		}
 		data[index] = el;
+	}
+	
+	public int[] getData() {
+		return data;
 	}
 
 	public long getId() {
@@ -46,14 +54,23 @@ public class ArrayManager {
 	public void setId(long id) {
 		this.id = id;
 	}
+	
+	public int size() throws CustomArrayException {
+		if (data == null) {
+			return -1;
+		}
+		return data.length;
+	}
+
 
 	@Override
 	public boolean equals(Object object) {
-		if (this == object)
+		if (this == object) {
 			return true;
+		}
 		if (object == null || this.getClass() != object.getClass())
 			return false;
-		ArrayManager array = (ArrayManager) object;
+		CustomArray array = (CustomArray) object;
 		return this.id == array.id && Arrays.equals(this.data, array.data);
 	}
 
@@ -65,7 +82,7 @@ public class ArrayManager {
 	@Override
 	public String toString() {
 		StringBuilder builder = new StringBuilder();
-		builder.append("ArrayManager [id=");
+		builder.append("CustomArray [id=");
 		builder.append(id);
 		builder.append(", data=");
 		builder.append(Arrays.toString(data));
@@ -74,7 +91,7 @@ public class ArrayManager {
 	}
 
 	public static Builder newBuilder() {
-		return new ArrayManager().new Builder();
+		return new CustomArray().new Builder();
 	}
 
 	public class Builder {
@@ -84,17 +101,17 @@ public class ArrayManager {
 		}
 
 		public Builder setId(long id) {
-			ArrayManager.this.id = id;
+			CustomArray.this.id = id;
 			return this;
 		}
 		
 		public Builder setData(int[] data) {
-			ArrayManager.this.data = data.clone();
+			CustomArray.this.data = data.clone();
 			return this;
 		}
 
-		public ArrayManager build() {
-			return ArrayManager.this;
+		public CustomArray build() {
+			return CustomArray.this;
 		}
 
 	}
