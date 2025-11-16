@@ -1,5 +1,6 @@
 package com.viduk.ft.service.impl;
 
+import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -21,7 +22,7 @@ public class CustomArraySortServiceImpl implements CustomArraySortService {
 	public void insertionSort(CustomArray array) throws CustomArrayException {
 
 		if (array.size() == -1) {
-			log.error("CustomArray is null or invalid");
+			log.log(Level.ERROR, "CustomArray is null or invalid" + array);
 			throw new CustomArrayException("CustomArray is null");
 		}
 		for (int i = 1; i < array.size(); i++) {
@@ -31,7 +32,7 @@ public class CustomArraySortServiceImpl implements CustomArraySortService {
 			}
 			array.set(j, temp);
 		}
-		log.debug("CustomArray has sorted", array);
+		log.log(Level.INFO, "CustomArray has sorted" + array);
 
 	}
 

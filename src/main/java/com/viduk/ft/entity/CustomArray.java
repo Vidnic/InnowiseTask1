@@ -2,7 +2,9 @@ package com.viduk.ft.entity;
 
 import java.util.Objects;
 import java.util.Arrays;
+import java.util.stream.IntStream;
 
+import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -31,13 +33,15 @@ public class CustomArray {
 
 	public int get(int index) throws CustomArrayException {
 		if (index >= data.length || index < 0) {
-			throw new CustomArrayException("index is out range");
+			log.log(Level.ERROR, "index is out range" + index);
+			throw new CustomArrayException("index is out range" + index);
 		}
 		return data[index];
 	}
 
 	public void set(int index, int el) throws CustomArrayException {
 		if (index >= data.length || index < 0) {
+			log.log(Level.ERROR, "index is out range" + index);
 			throw new CustomArrayException("index is out range");
 		}
 		data[index] = el;
@@ -55,13 +59,16 @@ public class CustomArray {
 		this.id = id;
 	}
 	
-	public int size() throws CustomArrayException {
+	public int size() {
 		if (data == null) {
 			return -1;
 		}
 		return data.length;
 	}
 
+	public IntStream stream() {
+		return Arrays.stream(data);
+	}
 
 	@Override
 	public boolean equals(Object object) {
