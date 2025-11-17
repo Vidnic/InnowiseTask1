@@ -5,9 +5,9 @@ import java.io.IOException;
 import java.nio.file.*;
 
 import com.viduk.ft.exсeption.CustomArrayException;
-import com.viduk.ft.reader.CustomArrayReader;
+import com.viduk.ft.reader.CustomArrayFileReader;
 
-public class CustomArrayReaderImpl implements CustomArrayReader {
+public class CustomArrayReaderImpl implements CustomArrayFileReader {
 
 	public List<String> readCustomArrayFile(String filepath) throws CustomArrayException {
 		

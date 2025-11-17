@@ -4,7 +4,7 @@ import java.util.List;
 
 import com.viduk.ft.exсeption.CustomArrayException;
 
-public interface CustomArrayReader {
+public interface CustomArrayFileReader {
 	
 	 List<String> readCustomArrayFile(String filepath) throws CustomArrayException;
 

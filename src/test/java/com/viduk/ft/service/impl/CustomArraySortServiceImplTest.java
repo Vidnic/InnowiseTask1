@@ -5,7 +5,6 @@ import static org.junit.jupiter.api.Assertions.*;
 
 import com.viduk.ft.entity.CustomArray;
 import com.viduk.ft.exсeption.CustomArrayException;
-import com.viduk.ft.service.impl.*;
 
 public class CustomArraySortServiceImplTest {
 	

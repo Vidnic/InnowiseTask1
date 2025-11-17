@@ -11,9 +11,9 @@ public class CustomArraySearchServiceImpl implements CustomArraySearchService {
 	@Override
 	public OptionalInt findMax(CustomArray array) {
 		OptionalInt max = OptionalInt.empty();
-		if(array.size() > 0) {
+		if (array.size() > 0) {
 			max = array.stream()
-					 			 .max();
+								 .max();
 		}
 		return max;
 	}
@@ -21,7 +21,7 @@ public class CustomArraySearchServiceImpl implements CustomArraySearchService {
 	@Override
 	public OptionalInt findMin(CustomArray array) {
 		OptionalInt min = OptionalInt.empty();
-		if(array.size() > 0) {
+		if (array.size() > 0) {
 			min = array.stream()
 								 .min();
 		}
@@ -30,10 +30,31 @@ public class CustomArraySearchServiceImpl implements CustomArraySearchService {
 
 	@Override
 	public OptionalDouble findAverage(CustomArray array) {
-		// TODO Auto-generated method stub
-		return null;
+		OptionalDouble average = OptionalDouble.empty();
+		if (array.size() > 0) {
+			average = array.stream().average();
+		}
+		return average;
 	}
 
+	@Override
+	public int findSum(CustomArray array) {
+		return array.stream()
+								.sum();
+	}
 	
+	@Override
+	public long findCountOfNegatives(CustomArray array) {
+		return array.stream()
+								.filter(el -> el < 0)
+								.sum();
+	}
 	
+	@Override
+	public long findCountOfPositives(CustomArray array) {
+		return array.stream()
+								.filter(el -> el > 0)
+								.count();
+	}
+
 }

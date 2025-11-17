@@ -11,5 +11,8 @@ public interface CustomArraySearchService {
 	OptionalInt findMax(CustomArray array) throws CustomArrayException;
 	OptionalInt findMin(CustomArray array) throws CustomArrayException;
 	OptionalDouble findAverage(CustomArray array);
+	int findSum(CustomArray array);
+	long findCountOfNegatives(CustomArray array);
+	long findCountOfPositives(CustomArray array);
 	
 }
