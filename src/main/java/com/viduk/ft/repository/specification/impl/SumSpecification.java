@@ -1,4 +1,4 @@
-package com.viduk.ft.specification.impl;
+package com.viduk.ft.repository.specification.impl;
 
 import com.viduk.ft.entity.CustomArray;
 import com.viduk.ft.specification.Specification;
