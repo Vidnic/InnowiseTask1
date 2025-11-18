@@ -8,9 +8,10 @@ import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import com.viduk.ft.exсeption.*;
+import com.viduk.ft.exсeption.CustomArrayException;
+import com.viduk.ft.observer.CustomArrayObservable;
 
-public class CustomArray {
+public class CustomArray implements CustomArrayObservable{
 
 	private static final Logger log = LogManager.getLogger(); 
 	
@@ -28,6 +29,9 @@ public class CustomArray {
 
 	public CustomArray(long id, int[] data) {
 		this.setId(id);
+		if(data == null) {
+			log.log(Level.WARN, "Create CustomArray with null data");
+		}
 		this.data = data.clone();
 	}
 
@@ -49,6 +53,13 @@ public class CustomArray {
 	
 	public int[] getData() {
 		return data;
+	}
+	
+	public void setData(int[] data) {
+		if(data == null) {
+			log.log(Level.WARN, "Create CustomArray with null data");
+		}
+		this.data = data.clone();
 	}
 
 	public long getId() {

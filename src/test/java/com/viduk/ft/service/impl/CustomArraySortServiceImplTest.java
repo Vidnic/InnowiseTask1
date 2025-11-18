@@ -8,7 +8,7 @@ import com.viduk.ft.exсeption.CustomArrayException;
 
 public class CustomArraySortServiceImplTest {
 	
-	CustomArray actual = new CustomArray(1, new int[] {42, -7, 19, -3, 88, -15, 61, 2, -33, 10});
+	CustomArray actual;
 	
 	@BeforeEach
 	void setUp() {
