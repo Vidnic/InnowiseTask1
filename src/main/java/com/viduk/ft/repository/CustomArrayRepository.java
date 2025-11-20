@@ -12,16 +12,16 @@ import org.apache.logging.log4j.Logger;
 import com.viduk.ft.entity.CustomArray;
 import com.viduk.ft.specification.Specification;
 
-public class Repository {
+public class CustomArrayRepository {
 
 	private static final Logger log = LogManager.getLogger();
 	private List<CustomArray> CustomArrays;
-	private static Repository instance = new Repository();
+	private static CustomArrayRepository instance = new CustomArrayRepository();
 
-	private Repository() {
+	private CustomArrayRepository() {
 	}
 
-	public static Repository getInstance() {
+	public static CustomArrayRepository getInstance() {
 		return instance;
 	}
 
