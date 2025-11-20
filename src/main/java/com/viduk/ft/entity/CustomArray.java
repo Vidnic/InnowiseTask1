@@ -49,6 +49,9 @@ public class CustomArray implements CustomArrayObservable {
 			throw new CustomArrayException("index is out range");
 		}
 		data[index] = el;
+		if (observer != null) {
+      observer.update(this);
+		}
 	}
 
 	public int[] getData() {
@@ -60,6 +63,9 @@ public class CustomArray implements CustomArrayObservable {
 			log.log(Level.WARN, "Create CustomArray with null data");
 		}
 		this.data = data.clone();
+		if (observer != null) {
+      observer.update(this);
+		}
 	}
 
 	public long getId() {
