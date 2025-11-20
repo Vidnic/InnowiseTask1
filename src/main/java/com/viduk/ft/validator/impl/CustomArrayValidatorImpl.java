@@ -10,7 +10,7 @@ public class CustomArrayValidatorImpl implements CustomArrayValidator {
 	public boolean checkCustomArrayString(String[] parsedLine) {
 		boolean check;
 		check = Arrays.stream(parsedLine)
-								  .allMatch(s -> s.matches("-?\\d+"));
+								  .allMatch(s -> s.matches(NUMERIC_DATA_PREFIX));
 		return check;
 	}
 

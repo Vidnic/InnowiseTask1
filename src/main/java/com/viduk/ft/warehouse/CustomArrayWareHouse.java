@@ -7,7 +7,7 @@ import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import com.viduk.ft.stats.CustomArrayStats;
+import com.viduk.ft.entity.CustomArrayStats;
 
 public class CustomArrayWareHouse {
 
@@ -26,6 +26,13 @@ public class CustomArrayWareHouse {
 			log.log(Level.WARN, "Pretend to put null stats in WareHouse");
 		}
 		stats.put(id, parameters);
+	}
+	
+	public void add(CustomArrayStats parameters) {
+		if(parameters == null) {
+			log.log(Level.WARN, "Pretend to put null stats in WareHouse");
+		}
+
 	}
 	
 	public CustomArrayStats get(long id) {
