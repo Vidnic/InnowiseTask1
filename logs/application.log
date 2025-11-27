@@ -1,0 +1,89 @@
+2025-11-15 18:06:54.011 [main] DEBUG com.viduk.ft.service.impl.CustomArraySortServiceImpl - CustomArray has sorted
+2025-11-15 18:08:41.673 [main] DEBUG com.viduk.ft.service.impl.CustomArraySortServiceImpl - CustomArray has sorted
+2025-11-15 18:09:05.726 [main] DEBUG com.viduk.ft.service.impl.CustomArraySortServiceImpl - CustomArray has sorted
+2025-11-16 15:41:13.380 [main] INFO  com.viduk.ft.service.impl.CustomArraySortServiceImpl - CustomArray has sortedCustomArray [id=1, data=[-33, -15, -7, -3, 2, 10, 19, 42, 61, 88]]
+2025-11-16 15:41:37.814 [main] INFO  com.viduk.ft.service.impl.CustomArraySortServiceImpl - CustomArray has sortedCustomArray [id=1, data=[-33, -15, -7, -3, 2, 10, 19, 42, 61, 88]]
+2025-11-18 19:16:44.368 [main] INFO  com.viduk.ft.service.impl.CustomArraySortServiceImpl - CustomArray has sortedCustomArray [id=1, data=[-33, -15, -7, -3, 2, 10, 19, 42, 61, 88]]
+2025-11-24 11:38:32.327 [main] INFO  com.viduk.ft.reader.impl.CustomArrayReaderImpl - File successfully readed
+2025-11-24 11:46:00.949 [main] ERROR com.viduk.ft.reader.impl.CustomArrayReaderImpl - input File doesn't exist
+2025-11-24 11:47:48.553 [main] INFO  com.viduk.ft.reader.impl.CustomArrayReaderImpl - File successfully readed
+2025-11-24 21:54:13.997 [main] ERROR com.viduk.ft.reader.impl.CustomArrayReaderImpl - input File doesn't exist
+2025-11-24 21:54:14.052 [main] INFO  com.viduk.ft.reader.impl.CustomArrayReaderImpl - File successfully readed
+2025-11-24 21:54:14.056 [main] INFO  com.viduk.ft.reader.impl.CustomArrayReaderImpl - File successfully readed
+2025-11-26 20:16:04.396 [main] INFO  com.viduk.ft.repository.CustomArrayRepository - sorting query is done
+2025-11-26 20:17:35.566 [main] INFO  com.viduk.ft.repository.CustomArrayRepository - sorting query is done
+2025-11-26 20:17:35.599 [main] INFO  com.viduk.ft.repository.CustomArrayRepository - qury is done
+2025-11-26 20:17:35.599 [main] INFO  com.viduk.ft.repository.CustomArrayRepository - qury is done
+2025-11-26 20:17:35.600 [main] INFO  com.viduk.ft.repository.CustomArrayRepository - qury is done
+2025-11-26 20:18:05.315 [main] INFO  com.viduk.ft.repository.CustomArrayRepository - sorting query is done
+2025-11-26 20:18:05.338 [main] INFO  com.viduk.ft.repository.CustomArrayRepository - qury is done
+2025-11-26 20:18:05.338 [main] INFO  com.viduk.ft.repository.CustomArrayRepository - qury is done
+2025-11-26 20:18:05.339 [main] INFO  com.viduk.ft.repository.CustomArrayRepository - qury is done
+2025-11-26 20:25:42.647 [main] INFO  com.viduk.ft.repository.CustomArrayRepository - sorting query is done
+2025-11-26 20:27:19.232 [main] INFO  com.viduk.ft.repository.CustomArrayRepository - sorting query is done
+2025-11-26 20:27:19.253 [main] INFO  com.viduk.ft.repository.CustomArrayRepository - query is done
+2025-11-26 20:27:19.254 [main] INFO  com.viduk.ft.repository.CustomArrayRepository - qury is done
+2025-11-26 20:27:19.255 [main] INFO  com.viduk.ft.repository.CustomArrayRepository - qury is done
+2025-11-26 20:27:34.403 [main] INFO  com.viduk.ft.repository.CustomArrayRepository - sorting query is done
+2025-11-26 20:27:34.423 [main] INFO  com.viduk.ft.repository.CustomArrayRepository - qury is done
+2025-11-26 20:27:34.424 [main] INFO  com.viduk.ft.repository.CustomArrayRepository - qury is done
+2025-11-26 20:27:34.425 [main] INFO  com.viduk.ft.repository.CustomArrayRepository - qury is done
+2025-11-26 20:30:29.277 [main] INFO  com.viduk.ft.repository.CustomArrayRepository - sorting query is done
+2025-11-26 20:30:29.297 [main] INFO  com.viduk.ft.repository.CustomArrayRepository - qury is done
+2025-11-26 20:30:29.298 [main] INFO  com.viduk.ft.repository.CustomArrayRepository - qury is done
+2025-11-26 20:30:29.298 [main] INFO  com.viduk.ft.repository.CustomArrayRepository - qury is done
+2025-11-26 20:30:50.744 [main] INFO  com.viduk.ft.repository.CustomArrayRepository - sorting query is done
+2025-11-26 20:30:50.765 [main] INFO  com.viduk.ft.repository.CustomArrayRepository - qury is done
+2025-11-26 20:30:50.766 [main] INFO  com.viduk.ft.repository.CustomArrayRepository - qury is done
+2025-11-26 20:30:50.766 [main] INFO  com.viduk.ft.repository.CustomArrayRepository - qury is done
+2025-11-26 20:31:54.890 [main] INFO  com.viduk.ft.repository.CustomArrayRepository - sorting query is done
+2025-11-26 20:31:54.912 [main] INFO  com.viduk.ft.repository.CustomArrayRepository - qury is done
+2025-11-26 20:31:54.913 [main] INFO  com.viduk.ft.repository.CustomArrayRepository - qury is done
+2025-11-26 20:31:54.913 [main] INFO  com.viduk.ft.repository.CustomArrayRepository - qury is done
+2025-11-26 20:52:42.119 [main] INFO  com.viduk.ft.service.impl.CustomArraySortServiceImpl - CustomArray has sortedCustomArray [id=0, data=[-33, -15, -7, -3, 2, 10, 19, 42, 61, 88]]
+2025-11-26 20:52:42.144 [main] ERROR com.viduk.ft.entity.CustomArray - index is out range10
+2025-11-26 20:52:42.153 [main] INFO  com.viduk.ft.service.impl.CustomArraySortServiceImpl - CustomArray has been merge sorted CustomArray [id=0, data=[-33, -15, -7, -3, 2, 10, 19, 42, 61, 88]]
+2025-11-26 20:52:44.758 [main] INFO  com.viduk.ft.service.impl.CustomArraySortServiceImpl - CustomArray has sortedCustomArray [id=0, data=[-33, -15, -7, -3, 2, 10, 19, 42, 61, 88]]
+2025-11-26 20:52:44.777 [main] ERROR com.viduk.ft.entity.CustomArray - index is out range10
+2025-11-26 20:52:44.785 [main] INFO  com.viduk.ft.service.impl.CustomArraySortServiceImpl - CustomArray has been merge sorted CustomArray [id=0, data=[-33, -15, -7, -3, 2, 10, 19, 42, 61, 88]]
+2025-11-26 20:53:29.616 [main] INFO  com.viduk.ft.service.impl.CustomArraySortServiceImpl - CustomArray has sortedCustomArray [id=1, data=[-33, -15, -7, -3, 2, 10, 19, 42, 61, 88]]
+2025-11-26 20:53:29.634 [main] ERROR com.viduk.ft.entity.CustomArray - index is out range10
+2025-11-26 20:53:29.648 [main] INFO  com.viduk.ft.service.impl.CustomArraySortServiceImpl - CustomArray has been merge sorted CustomArray [id=1, data=[-33, -15, -7, -3, 2, 10, 19, 42, 61, 88]]
+2025-11-26 20:53:31.974 [main] INFO  com.viduk.ft.service.impl.CustomArraySortServiceImpl - CustomArray has sortedCustomArray [id=1, data=[-33, -15, -7, -3, 2, 10, 19, 42, 61, 88]]
+2025-11-26 20:53:31.993 [main] ERROR com.viduk.ft.entity.CustomArray - index is out range10
+2025-11-26 20:53:32.007 [main] INFO  com.viduk.ft.service.impl.CustomArraySortServiceImpl - CustomArray has been merge sorted CustomArray [id=1, data=[-33, -15, -7, -3, 2, 10, 19, 42, 61, 88]]
+2025-11-26 20:56:04.363 [main] INFO  com.viduk.ft.service.impl.CustomArraySortServiceImpl - CustomArray has sortedCustomArray [id=1, data=[-33, -15, -7, -3, 2, 10, 19, 42, 61, 88]]
+2025-11-26 20:56:04.381 [main] ERROR com.viduk.ft.entity.CustomArray - index is out range10
+2025-11-26 20:56:04.395 [main] INFO  com.viduk.ft.service.impl.CustomArraySortServiceImpl - CustomArray has been merge sorted CustomArray [id=1, data=[-33, -15, -7, -3, 2, 10, 19, 42, 61, 88]]
+2025-11-26 20:56:07.477 [main] INFO  com.viduk.ft.service.impl.CustomArraySortServiceImpl - CustomArray has sortedCustomArray [id=1, data=[-33, -15, -7, -3, 2, 10, 19, 42, 61, 88]]
+2025-11-26 20:56:07.495 [main] ERROR com.viduk.ft.entity.CustomArray - index is out range10
+2025-11-26 20:56:07.513 [main] INFO  com.viduk.ft.service.impl.CustomArraySortServiceImpl - CustomArray has been merge sorted CustomArray [id=1, data=[-33, -15, -7, -3, 2, 10, 19, 42, 61, 88]]
+2025-11-26 20:57:04.087 [main] INFO  com.viduk.ft.service.impl.CustomArraySortServiceImpl - CustomArray has sortedCustomArray [id=1, data=[-33, -15, -7, -3, 2, 10, 19, 42, 61, 88]]
+2025-11-26 20:57:04.099 [main] ERROR com.viduk.ft.entity.CustomArray - index is out range10
+2025-11-26 20:57:04.111 [main] INFO  com.viduk.ft.service.impl.CustomArraySortServiceImpl - CustomArray has been merge sorted CustomArray [id=1, data=[-33, -15, -7, -3, 2, 10, 19, 42, 61, 88]]
+2025-11-26 21:00:06.490 [main] INFO  com.viduk.ft.service.impl.CustomArraySortServiceImpl - CustomArray has sortedCustomArray [id=1, data=[-33, -15, -7, -3, 2, 10, 19, 42, 61, 88]]
+2025-11-26 21:00:06.512 [main] INFO  com.viduk.ft.service.impl.CustomArraySortServiceImpl - CustomArray has been sorted CustomArray [id=1, data=[-33, -15, -7, -3, 2, 10, 19, 42, 61, 88]]
+2025-11-26 21:00:06.515 [main] INFO  com.viduk.ft.service.impl.CustomArraySortServiceImpl - CustomArray has been merge sorted CustomArray [id=1, data=[-33, -15, -7, -3, 2, 10, 19, 42, 61, 88]]
+2025-11-26 21:03:28.944 [main] INFO  com.viduk.ft.service.impl.CustomArraySortServiceImpl - CustomArray has been sortedCustomArray [id=1, data=[-33, -15, -7, -3, 2, 10, 19, 42, 61, 88]]
+2025-11-26 21:03:28.964 [main] INFO  com.viduk.ft.service.impl.CustomArraySortServiceImpl - CustomArray has been sorted CustomArray [id=1, data=[-33, -15, -7, -3, 2, 10, 19, 42, 61, 88]]
+2025-11-26 21:03:28.966 [main] INFO  com.viduk.ft.service.impl.CustomArraySortServiceImpl - CustomArray has been sorted CustomArray [id=1, data=[-33, -15, -7, -3, 2, 10, 19, 42, 61, 88]]
+2025-11-26 21:03:37.796 [main] ERROR com.viduk.ft.reader.impl.CustomArrayReaderImpl - input File doesn't existdata/nonExisting.txt
+2025-11-26 21:03:37.845 [main] INFO  com.viduk.ft.reader.impl.CustomArrayReaderImpl - File successfully readed
+2025-11-26 21:03:37.847 [main] INFO  com.viduk.ft.reader.impl.CustomArrayReaderImpl - File successfully readed
+2025-11-26 21:03:37.859 [main] INFO  com.viduk.ft.repository.CustomArrayRepository - sorting query is done
+2025-11-26 21:03:37.862 [main] INFO  com.viduk.ft.repository.CustomArrayRepository - qury is done
+2025-11-26 21:03:37.862 [main] INFO  com.viduk.ft.repository.CustomArrayRepository - qury is done
+2025-11-26 21:03:37.863 [main] INFO  com.viduk.ft.repository.CustomArrayRepository - qury is done
+2025-11-26 21:03:37.870 [main] INFO  com.viduk.ft.service.impl.CustomArraySortServiceImpl - CustomArray has been sortedCustomArray [id=1, data=[-33, -15, -7, -3, 2, 10, 19, 42, 61, 88]]
+2025-11-26 21:03:37.872 [main] INFO  com.viduk.ft.service.impl.CustomArraySortServiceImpl - CustomArray has been sorted CustomArray [id=1, data=[-33, -15, -7, -3, 2, 10, 19, 42, 61, 88]]
+2025-11-26 21:03:37.873 [main] INFO  com.viduk.ft.service.impl.CustomArraySortServiceImpl - CustomArray has been sorted CustomArray [id=1, data=[-33, -15, -7, -3, 2, 10, 19, 42, 61, 88]]
+2025-11-27 19:00:22.834 [main] ERROR com.viduk.ft.reader.impl.CustomArrayReaderImpl - input File doesn't existdata/nonExisting.txt
+2025-11-27 19:00:22.876 [main] INFO  com.viduk.ft.reader.impl.CustomArrayReaderImpl - File successfully readed
+2025-11-27 19:00:22.880 [main] INFO  com.viduk.ft.reader.impl.CustomArrayReaderImpl - File successfully readed
+2025-11-27 19:00:22.893 [main] INFO  com.viduk.ft.repository.CustomArrayRepository - sorting query is done
+2025-11-27 19:00:22.895 [main] INFO  com.viduk.ft.repository.CustomArrayRepository - qury is done
+2025-11-27 19:00:22.896 [main] INFO  com.viduk.ft.repository.CustomArrayRepository - qury is done
+2025-11-27 19:00:22.898 [main] INFO  com.viduk.ft.repository.CustomArrayRepository - qury is done
+2025-11-27 19:00:22.905 [main] INFO  com.viduk.ft.service.impl.CustomArraySortServiceImpl - CustomArray has been sortedCustomArray [id=1, data=[-33, -15, -7, -3, 2, 10, 19, 42, 61, 88]]
+2025-11-27 19:00:22.906 [main] INFO  com.viduk.ft.service.impl.CustomArraySortServiceImpl - CustomArray has been sorted CustomArray [id=1, data=[-33, -15, -7, -3, 2, 10, 19, 42, 61, 88]]
+2025-11-27 19:00:22.909 [main] INFO  com.viduk.ft.service.impl.CustomArraySortServiceImpl - CustomArray has been sorted CustomArray [id=1, data=[-33, -15, -7, -3, 2, 10, 19, 42, 61, 88]]
