@@ -4,11 +4,11 @@ import com.viduk.ft.entity.CustomArray;
 import com.viduk.ft.specification.Specification;
 import com.viduk.ft.service.impl.CustomArraySearchServiceImpl;
 
-public class SumSpecification implements Specification {
+public class SumEqualSpecification implements Specification {
 
 	private int sum;
 	
-	public SumSpecification(int sum) {
+	public SumEqualSpecification(int sum) {
 		this.sum = sum;
 	}
 	

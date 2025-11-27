@@ -11,7 +11,7 @@ public class CustomArraySearchServiceImpl implements CustomArraySearchService {
 	@Override
 	public OptionalInt findMax(CustomArray array) {
 		OptionalInt max = OptionalInt.empty();
-		if (array.size() > 0) {
+		if (array.size() != OptionalInt.empty()) {
 			max = array.stream()
 								 .max();
 		}
@@ -21,7 +21,7 @@ public class CustomArraySearchServiceImpl implements CustomArraySearchService {
 	@Override
 	public OptionalInt findMin(CustomArray array) {
 		OptionalInt min = OptionalInt.empty();
-		if (array.size() > 0) {
+		if (array.size() != OptionalInt.empty()) {
 			min = array.stream()
 								 .min();
 		}
@@ -31,7 +31,7 @@ public class CustomArraySearchServiceImpl implements CustomArraySearchService {
 	@Override
 	public OptionalDouble findAverage(CustomArray array) {
 		OptionalDouble average = OptionalDouble.empty();
-		if (array.size() > 0) {
+		if (array.size() != OptionalInt.empty()) {
 			average = array.stream().average();
 		}
 		return average;

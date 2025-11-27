@@ -17,23 +17,20 @@ public class CustomArrayReaderImpl implements CustomArrayFileReader {
 	private static final Logger log = LogManager.getLogger();
 	
 	public List<String> readCustomArrayFile(String filepath) throws CustomArrayException {
-		
 		List<String> readedFile;
 		Path path = Paths.get(filepath);
 		if(!Files.exists(path)) {
-			log.log(Level.ERROR, "input File doesn't exist");
-			throw new CustomArrayException("File does not exsists" + filepath);
+			log.log(Level.ERROR, "input File doesn't exist" + filepath);
+			throw new CustomArrayException("File doesn't exsists" + filepath);
 		}
 		try{
 			readedFile = Files.readAllLines(path);
 		}
 		catch(IOException e) {
-			log.log(Level.ERROR, "input File error");
-			throw new CustomArrayException("File error" + e);
+			log.log(Level.ERROR, "input File error", e);
+			throw new CustomArrayException("File error", e);
 		}
 		log.log(Level.INFO, "File successfully readed");
-		return readedFile;
-		
+		return readedFile;	
 	}
-	
 }

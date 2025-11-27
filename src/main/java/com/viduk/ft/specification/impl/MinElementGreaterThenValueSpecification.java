@@ -1,23 +1,20 @@
 package com.viduk.ft.specification.impl;
 
-import java.util.OptionalInt;
-
 import com.viduk.ft.entity.CustomArray;
 import com.viduk.ft.specification.Specification;
 import com.viduk.ft.service.impl.CustomArraySearchServiceImpl;
 
-public class MinElementSpecification implements Specification {
+public class MinElementGreaterThenValueSpecification implements Specification {
 
-	private OptionalInt min;
+	private int min;
 	
-	public MinElementSpecification(int min) {
-		this.min = OptionalInt.of(min);
+	public MinElementGreaterThenValueSpecification(int min) {
+		this.min = min;
 	}
 	
 	@Override
 	public boolean specify(CustomArray array) {
 		CustomArraySearchServiceImpl service = new CustomArraySearchServiceImpl();
-		return min == service.findMin(array);
+		return service.findMin(array).getAsInt() > min;
 	}
-
 }

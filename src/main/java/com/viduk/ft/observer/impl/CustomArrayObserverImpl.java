@@ -23,7 +23,7 @@ public class CustomArrayObserverImpl implements CustomArrayObserver {
 		try {
 			int min = minOptional.getAsInt();
 			int max = maxOptional.getAsInt();
-			warehouse.put(array.getId(), new CustomArrayStats(max, min, sum)); 
+			warehouse.put(array.getId(), new CustomArrayStatistics(max, min, sum)); 
 		}
 		catch(Exception e) {
 			log.log(Level.WARN, "can't calculate min and max for array" + array);

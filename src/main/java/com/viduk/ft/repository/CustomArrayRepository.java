@@ -15,9 +15,9 @@ import com.viduk.ft.specification.Specification;
 public class CustomArrayRepository {
 
 	private static final Logger log = LogManager.getLogger();
-	private List<CustomArray> CustomArrays;
 	private static CustomArrayRepository instance = new CustomArrayRepository();
-
+	private List<CustomArray> customArrays = new ArrayList<>();
+	
 	private CustomArrayRepository() {
 	}
 
@@ -26,19 +26,19 @@ public class CustomArrayRepository {
 	}
 
 	public void add(CustomArray array) {
-		CustomArrays.add(array);
+		customArrays.add(array);
 	}
 
 	public CustomArray remove(int index) {
-		return CustomArrays.remove(index);
+		return customArrays.remove(index);
 	}
 
 	public boolean remove(CustomArray array) {
-		return CustomArrays.remove(array);
+		return customArrays.remove(array);
 	}
 
 	public List<CustomArray> sort(Comparator<CustomArray> comparator) {
-		List<CustomArray> sorted = new ArrayList<>(CustomArrays);
+		List<CustomArray> sorted = new ArrayList<>(customArrays);
 		sorted.sort(comparator);
 		log.info("sorting query is done");
 		return sorted;
@@ -46,9 +46,9 @@ public class CustomArrayRepository {
 
 	public List<CustomArray> query(Specification specification) {
 		List<CustomArray> results = new ArrayList<CustomArray>();
-		for (CustomArray array : CustomArrays) {
+		for (CustomArray array : customArrays) {
 			if (specification.specify(array)) {
-				CustomArrays.add(array);
+				results.add(array);
 			}
 		}
 		log.log(Level.INFO, "query is done");
@@ -57,7 +57,9 @@ public class CustomArrayRepository {
 
 	public List<CustomArray> queryStream(Specification specification) {
 		List<CustomArray> results;
-		results = CustomArrays.stream().filter(ar -> specification.specify(ar)).collect(Collectors.toList());
+		results = customArrays.stream()
+													.filter(ar -> specification.specify(ar))
+													.collect(Collectors.toList());
 		log.log(Level.INFO, "qury is done");
 		return results;
 	}

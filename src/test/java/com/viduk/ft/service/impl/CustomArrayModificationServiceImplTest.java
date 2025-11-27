@@ -13,12 +13,6 @@ public class CustomArrayModificationServiceImplTest {
 	void setUp() {
 		actual = new CustomArray(1, new int[] {42, -7, 19, -3, 88, -15, 61, 2, -33, 10});
 	}
-	
-	@AfterEach
-	void setDown(){
-		
-	}
-
 	@Test
 	void replaceUnderCondition() {
 		CustomArray expected = new CustomArray (1, new int[] {42, 0, 19, 0, 88, 0, 61, 2, 0, 10});
